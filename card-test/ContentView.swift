@@ -5,8 +5,59 @@ struct ContentView: View {
     
     @State private var showNoCardsError = false
     
+    func checkAndEscape() -> Bool {
+#if targetEnvironment(simulator)
+#else
+        var supported = false
+        var needsTrollStore = false
+        if #available(iOS 16.2, *) {
+            supported = false
+        } else if #available(iOS 16.0, *) {
+            supported = true
+            needsTrollStore = false
+        } else if #available(iOS 15.7.2, *) {
+            supported = false
+        } else if #available(iOS 15.0, *) {
+            supported = true
+            needsTrollStore = false
+        } else if #available(iOS 14.0, *) {
+            supported = true
+            needsTrollStore = true
+        }
+        
+        if !supported {
+            UIApplication.shared.alert(title: "Not Supported", body: "This version of iOS is not supported. Please close the app.")
+            return false
+        }
+            
+        do {
+            // Check if application is entitled
+            try FileManager.default.contentsOfDirectory(at: URL(fileURLWithPath: "/var/mobile"), includingPropertiesForKeys: nil)
+            return true
+        } catch {
+            if needsTrollStore {
+                UIApplication.shared.alert(title: "Use TrollStore", body: "You must install this app with TrollStore for it to work with this version of iOS. Please close the app.")
+                return false
+            }
+            // Use MacDirtyCOW to gain r/w
+            var didSucceed = true
+            grant_full_disk_access() { error in
+                if (error != nil) {
+                    UIApplication.shared.alert(body: "\(String(describing: error?.localizedDescription))\nPlease close the app and retry.")
+                    didSucceed = false
+                }
+            }
+            return didSucceed
+        }
+#endif
+    }
+    
     func getPasses() -> [String]
     {
+        if !checkAndEscape() {
+            return []
+        }
+        
         let fm = FileManager.default
         let path = "/var/mobile/Library/Passes/Cards/"
         var data = [String]()
@@ -31,28 +82,6 @@ struct ContentView: View {
             return []
         }
     }
-    
-    /*func getName(id: String) -> String {
-        let jsonPath = "/var/mobile/Library/Passes/Cards/" + id + "/pass.json"
-
-        
-        do {
-            let contents = try String(contentsOfFile: jsonPath)
-            let data: Data? = contents.data(using: .utf8)
-            
-            if let json = try JSONSerialization.jsonObject(with: data!, options: []) as? [String: Any] {
-                
-                if let name = try json["organizationName"] as? String {
-                    return name
-                }
-            }
-            
-        } catch {
-            return (error.localizedDescription)
-        }
-    
-        return "error"
-    }*/
     
     func getImage(id: String) -> (String, String)
     {

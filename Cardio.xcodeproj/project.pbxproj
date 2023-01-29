@@ -7,9 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2514835829860446004581E8 /* entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2514835729860445004581E8 /* entitlements.plist */; };
+		2514836029860460004581E8 /* vm_unaligned_copy_switch_race.c in Sources */ = {isa = PBXBuildFile; fileRef = 2514835A29860460004581E8 /* vm_unaligned_copy_switch_race.c */; };
+		2514836129860460004581E8 /* grant_full_disk_access.m in Sources */ = {isa = PBXBuildFile; fileRef = 2514835B29860460004581E8 /* grant_full_disk_access.m */; };
+		2514836229860460004581E8 /* helpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 2514835C29860460004581E8 /* helpers.m */; };
+		25148364298604B7004581E8 /* ipabuild.sh in Resources */ = {isa = PBXBuildFile; fileRef = 25148363298604B7004581E8 /* ipabuild.sh */; };
+		2514836C29860588004581E8 /* Respring.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2514836829860588004581E8 /* Respring.swift */; };
+		2514836D29860588004581E8 /* Alert++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2514836929860588004581E8 /* Alert++.swift */; };
+		2514836E29860588004581E8 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2514836A29860588004581E8 /* String.swift */; };
 		8A928B9928E5CEFB00EADBA5 /* ACarousel in Frameworks */ = {isa = PBXBuildFile; productRef = 8A928B9828E5CEFB00EADBA5 /* ACarousel */; };
 		8A928B9D28E5E1EB00EADBA5 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A928B9C28E5E1EB00EADBA5 /* ImagePicker.swift */; };
-		8A928BA128E5F04800EADBA5 /* ObjcHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A928BA028E5F04800EADBA5 /* ObjcHelper.m */; };
 		8A928BA828E706AF00EADBA5 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A928BA728E706AF00EADBA5 /* CardView.swift */; };
 		8AA5372028E269E100146E99 /* card_testApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA5371F28E269E100146E99 /* card_testApp.swift */; };
 		8AA5372228E269E100146E99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AA5372128E269E100146E99 /* ContentView.swift */; };
@@ -18,10 +25,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2514835729860445004581E8 /* entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = entitlements.plist; sourceTree = "<group>"; };
+		2514835A29860460004581E8 /* vm_unaligned_copy_switch_race.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vm_unaligned_copy_switch_race.c; sourceTree = "<group>"; };
+		2514835B29860460004581E8 /* grant_full_disk_access.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = grant_full_disk_access.m; sourceTree = "<group>"; };
+		2514835C29860460004581E8 /* helpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = helpers.m; sourceTree = "<group>"; };
+		2514835D29860460004581E8 /* vm_unaligned_copy_switch_race.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vm_unaligned_copy_switch_race.h; sourceTree = "<group>"; };
+		2514835E29860460004581E8 /* helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helpers.h; sourceTree = "<group>"; };
+		2514835F29860460004581E8 /* grant_full_disk_access.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = grant_full_disk_access.h; sourceTree = "<group>"; };
+		25148363298604B7004581E8 /* ipabuild.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ipabuild.sh; sourceTree = "<group>"; };
+		2514836829860588004581E8 /* Respring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Respring.swift; sourceTree = "<group>"; };
+		2514836929860588004581E8 /* Alert++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert++.swift"; sourceTree = "<group>"; };
+		2514836A29860588004581E8 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		8A928B9C28E5E1EB00EADBA5 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		8A928B9F28E5F04800EADBA5 /* card-test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "card-test-Bridging-Header.h"; sourceTree = "<group>"; };
-		8A928BA028E5F04800EADBA5 /* ObjcHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcHelper.m; sourceTree = "<group>"; };
-		8A928BA228E5F06D00EADBA5 /* ObjcHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcHelper.h; sourceTree = "<group>"; };
 		8A928BA728E706AF00EADBA5 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		8AA5371C28E269E100146E99 /* Cardio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cardio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AA5371F28E269E100146E99 /* card_testApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = card_testApp.swift; sourceTree = "<group>"; };
@@ -42,9 +58,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2514835929860460004581E8 /* Exploits */ = {
+			isa = PBXGroup;
+			children = (
+				2514835A29860460004581E8 /* vm_unaligned_copy_switch_race.c */,
+				2514835B29860460004581E8 /* grant_full_disk_access.m */,
+				2514835C29860460004581E8 /* helpers.m */,
+				2514835D29860460004581E8 /* vm_unaligned_copy_switch_race.h */,
+				2514835E29860460004581E8 /* helpers.h */,
+				2514835F29860460004581E8 /* grant_full_disk_access.h */,
+			);
+			path = Exploits;
+			sourceTree = "<group>";
+		};
+		2514836629860588004581E8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2514836829860588004581E8 /* Respring.swift */,
+				2514836929860588004581E8 /* Alert++.swift */,
+				2514836A29860588004581E8 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		8AA5371328E269E100146E99 = {
 			isa = PBXGroup;
 			children = (
+				25148363298604B7004581E8 /* ipabuild.sh */,
+				2514835729860445004581E8 /* entitlements.plist */,
 				8AA5371E28E269E100146E99 /* card-test */,
 				8AA5371D28E269E100146E99 /* Products */,
 			);
@@ -67,9 +108,9 @@
 				8AA5372328E269E200146E99 /* Assets.xcassets */,
 				8AA5372528E269E200146E99 /* Preview Content */,
 				8A928B9C28E5E1EB00EADBA5 /* ImagePicker.swift */,
-				8A928BA028E5F04800EADBA5 /* ObjcHelper.m */,
 				8A928B9F28E5F04800EADBA5 /* card-test-Bridging-Header.h */,
-				8A928BA228E5F06D00EADBA5 /* ObjcHelper.h */,
+				2514836629860588004581E8 /* Extensions */,
+				2514835929860460004581E8 /* Exploits */,
 			);
 			path = "card-test";
 			sourceTree = "<group>";
@@ -147,7 +188,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2514835829860446004581E8 /* entitlements.plist in Resources */,
 				8AA5372728E269E200146E99 /* Preview Assets.xcassets in Resources */,
+				25148364298604B7004581E8 /* ipabuild.sh in Resources */,
 				8AA5372428E269E200146E99 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,10 +203,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A928B9D28E5E1EB00EADBA5 /* ImagePicker.swift in Sources */,
-				8A928BA128E5F04800EADBA5 /* ObjcHelper.m in Sources */,
+				2514836029860460004581E8 /* vm_unaligned_copy_switch_race.c in Sources */,
+				2514836129860460004581E8 /* grant_full_disk_access.m in Sources */,
 				8AA5372228E269E100146E99 /* ContentView.swift in Sources */,
+				2514836D29860588004581E8 /* Alert++.swift in Sources */,
+				2514836E29860588004581E8 /* String.swift in Sources */,
 				8AA5372028E269E100146E99 /* card_testApp.swift in Sources */,
 				8A928BA828E706AF00EADBA5 /* CardView.swift in Sources */,
+				2514836229860460004581E8 /* helpers.m in Sources */,
+				2514836C29860588004581E8 /* Respring.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,17 +343,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_ASSET_PATHS = "\"card-test/Preview Content\"";
-				DEVELOPMENT_TEAM = V46UGT9N8W;
+				DEVELOPMENT_TEAM = U67AKNW8PW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "card-test/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Cardio;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Tap \"OK\" for $(PRODUCT_NAME) to work.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -337,17 +385,17 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1.1;
 				DEVELOPMENT_ASSET_PATHS = "\"card-test/Preview Content\"";
-				DEVELOPMENT_TEAM = V46UGT9N8W;
+				DEVELOPMENT_TEAM = U67AKNW8PW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "card-test/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Cardio;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "Tap \"OK\" for $(PRODUCT_NAME) to work.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
